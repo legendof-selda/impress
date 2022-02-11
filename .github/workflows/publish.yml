@@ -28,7 +28,7 @@ jobs:
         dotnet-version: 6.0.x
       
     - name: Publish App
-      run: dotnet publish impress.csproj -c Release -o release --nologo
+      run: dotnet publish impress.sln -c Release -o release --nologo
       
     # changes the base-tag in index.html from '/' to 'impress' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to impress
